@@ -19,6 +19,7 @@ class TaskExecutor(
 ) {
     companion object {
         internal var commandExecutor: ((String) -> Any)? = null
+        internal var log: ((Level, String) -> Any)? = null
     }
 
     private val schedulers = mutableListOf<Scheduler>()
@@ -26,6 +27,7 @@ class TaskExecutor(
 
     init {
         TaskExecutor.commandExecutor = commandExecutor
+        TaskExecutor.log = log
         for (task in config.tasks) {
             addTrigger(task)
         }

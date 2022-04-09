@@ -25,10 +25,14 @@ class TaskerBukkit : JavaPlugin() {
 
         val exec = { command: String ->
             Bukkit.getScheduler().callSyncMethod(this) {
-                server.dispatchCommand(
-                    server.consoleSender,
-                    command
-                )
+                try {
+                    server.dispatchCommand(
+                        server.consoleSender,
+                        command
+                    )
+                } catch (e: Exception) {
+                    log(Level.ALL, "Task failed: '$command' Error: ${e.message}")
+                }
             }
         }
 

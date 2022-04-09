@@ -4,6 +4,7 @@ import config.Task
 import org.quartz.Job
 import org.quartz.JobDataMap
 import org.quartz.JobExecutionContext
+import java.util.logging.Level
 
 class CommandJob : Job {
     companion object {
@@ -17,6 +18,7 @@ class CommandJob : Job {
     override fun execute(context: JobExecutionContext?) {
         val command = context?.jobDetail?.jobDataMap?.getString("command")
         if (command != null) {
+            TaskExecutor.log?.invoke(Level.INFO, "Tasker executes '$command'")
             TaskExecutor.commandExecutor?.invoke(command)
         }
     }
