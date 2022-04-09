@@ -12,7 +12,11 @@ import org.quartz.impl.StdSchedulerFactory
 import java.util.*
 import java.util.logging.Level
 
-class TaskExecutor(config: TaskerConfigManager, commandExecutor: (String) -> Any, private val log: (Level, String) -> Any) {
+class TaskExecutor(
+    config: TaskerConfigManager,
+    commandExecutor: (String) -> Any,
+    private val log: (Level, String) -> Any
+) {
     companion object {
         internal var commandExecutor: ((String) -> Any)? = null
     }
@@ -46,8 +50,7 @@ class TaskExecutor(config: TaskerConfigManager, commandExecutor: (String) -> Any
             scheduler.scheduleJob(job, trigger)
 
             schedulers.add(scheduler)
-        }
-        catch (e: Exception) {
+        } catch (e: Exception) {
             log(Level.ALL, "Failed to add task: '${task.cron}', ''${task.command}' Error: ${e.message}")
         }
     }

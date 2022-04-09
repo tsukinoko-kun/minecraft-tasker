@@ -22,12 +22,13 @@ class TaskerBukkit : JavaPlugin() {
             }
         }
 
-        val exec = { command: String -> Bukkit.getScheduler().callSyncMethod(this) {
-            server.dispatchCommand(
-                server.consoleSender,
-                command
-            )
-        }
+        val exec = { command: String ->
+            Bukkit.getScheduler().callSyncMethod(this) {
+                server.dispatchCommand(
+                    server.consoleSender,
+                    command
+                )
+            }
         }
 
         config = TaskerConfigManager(dir.absolutePath)
