@@ -1,0 +1,9 @@
+name: Tasker
+version: '${project.version}'
+main: io.frankmayer.tasker.TaskerBukkit
+api-version: 1.15
+prefix: tasker
+load: STARTUP
+authors: [ 'Frank-Mayer' ]
+description: Auto execute
+website: https://frank-mayer.io

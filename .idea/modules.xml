@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/minecraft-tasker.iml" filepath="$PROJECT_DIR$/minecraft-tasker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tasker-bukkit/tasker-bukkit.iml" filepath="$PROJECT_DIR$/tasker-bukkit/tasker-bukkit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tasker-bungeecord/tasker-bungeecord.iml" filepath="$PROJECT_DIR$/tasker-bungeecord/tasker-bungeecord.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tasker-common/tasker-common.iml" filepath="$PROJECT_DIR$/tasker-common/tasker-common.iml" />
+    </modules>
+  </component>
+</project>

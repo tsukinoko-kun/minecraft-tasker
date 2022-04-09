@@ -1,0 +1,4 @@
+name: Tasker
+version: '${project.version}'
+main: io.frankmayer.tasker.TaskerBungeeCord
+description: Auto execute
