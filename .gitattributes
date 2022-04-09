@@ -1,2 +1,7 @@
-# Auto detect text files and perform LF normalization
 * text=auto
+*.kt end=true
+*.java end=true
+*.xml end=true
+*.properties end=true
+*.txt end=true
+* eol=lf
