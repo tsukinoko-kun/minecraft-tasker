@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bb48c4f-fe43-4ded-9fa6-16e49788c152" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tasker-bukkit/src/main/java/io/frankmayer/tasker/TaskerBukkit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/tasker-bukkit/src/main/java/io/frankmayer/tasker/TaskerBukkit.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasker-bungeecord/src/main/java/io/frankmayer/tasker/TaskerBungeeCord.kt" beforeDir="false" afterPath="$PROJECT_DIR$/tasker-bungeecord/src/main/java/io/frankmayer/tasker/TaskerBungeeCord.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tasker-common/src/main/java/config/TaskerConfigManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/tasker-common/src/main/java/config/TaskerConfigManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasker-common/src/main/java/executor/TaskExecutor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/tasker-common/src/main/java/executor/TaskExecutor.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

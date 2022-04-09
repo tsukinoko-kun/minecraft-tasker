@@ -4,7 +4,7 @@ import com.google.gson.GsonBuilder
 import java.io.File
 import java.util.*
 
-class TaskerConfigManager(location: String) {
+class TaskerConfigManager(location: String, defaultTask: Task) {
     private val fileName = "$location/config.json"
     private val file = File(fileName)
     private val gson = GsonBuilder().setPrettyPrinting().create()
@@ -15,7 +15,7 @@ class TaskerConfigManager(location: String) {
             val configContent = file.readText()
             config = gson.fromJson(configContent, Configuration::class.java)
         } else {
-            config.tasks.add(Task("* * * * *", "msg @a Hello from Tasker!"))
+            config.tasks.add(defaultTask)
         }
 
         exportConfig()
