@@ -2,6 +2,7 @@ package config
 
 import com.google.gson.GsonBuilder
 import java.io.File
+import java.util.*
 
 class TaskerConfigManager (location: String) {
     private val fileName = "$location/config.json"
@@ -23,5 +24,13 @@ class TaskerConfigManager (location: String) {
 
     fun exportConfig() {
         file.writeText(gson.toJson(config, Configuration::class.java))
+    }
+
+    val tasks get(): List<Task> {
+        return config.tasks
+    }
+
+    val timeZone get(): TimeZone {
+        return TimeZone.getTimeZone(config.timeZone)
     }
 }
