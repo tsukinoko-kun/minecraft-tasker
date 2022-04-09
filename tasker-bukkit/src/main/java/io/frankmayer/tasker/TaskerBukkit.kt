@@ -1,6 +1,6 @@
 package io.frankmayer.tasker
 
-import io.frankmayer.tasker.common.TaskerConfigManager
+import config.TaskerConfigManager
 import org.bukkit.plugin.java.JavaPlugin
 
 class TaskerBukkit : JavaPlugin() {
