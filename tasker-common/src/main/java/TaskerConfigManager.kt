@@ -17,12 +17,11 @@ class TaskerConfigManager (location: String) {
         else {
             config.tasks.add(Task("* * * * *", "msg @a Hello from Tasker!"))
         }
-        
+
         exportConfig()
     }
 
     fun exportConfig() {
-        val configContent = gson.toJson(config, Configuration::class.java)
-        file.writeText(configContent)
+        file.writeText(gson.toJson(config, Configuration::class.java))
     }
 }
