@@ -1,8 +1,8 @@
 package io.frankmayer.tasker
 
-import config.Task
-import config.TaskerConfigManager
-import executor.TaskExecutor
+import io.frankmayer.tasker.config.Task
+import io.frankmayer.tasker.config.TaskerConfigManager
+import io.frankmayer.tasker.executor.TaskExecutor
 import org.bukkit.Bukkit
 import org.bukkit.plugin.java.JavaPlugin
 import java.util.logging.Level
