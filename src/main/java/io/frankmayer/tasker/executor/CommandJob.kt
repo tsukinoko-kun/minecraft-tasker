@@ -1,6 +1,6 @@
-package executor
+package io.frankmayer.tasker.executor
 
-import config.Task
+import io.frankmayer.tasker.config.Task
 import org.quartz.Job
 import org.quartz.JobDataMap
 import org.quartz.JobExecutionContext

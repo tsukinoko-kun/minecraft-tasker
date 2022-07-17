@@ -1,13 +1,13 @@
 package io.frankmayer.tasker
 
-import config.Task
-import config.TaskerConfigManager
-import executor.TaskExecutor
+import io.frankmayer.tasker.config.Task
+import io.frankmayer.tasker.config.TaskerConfigManager
+import io.frankmayer.tasker.executor.TaskExecutor
 import org.bukkit.Bukkit
 import org.bukkit.plugin.java.JavaPlugin
 import java.util.logging.Level
 
-class TaskerBukkit : JavaPlugin() {
+class Tasker : JavaPlugin() {
     private var config: TaskerConfigManager? = null
     private var executor: TaskExecutor? = null
 
@@ -36,7 +36,7 @@ class TaskerBukkit : JavaPlugin() {
             }
         }
 
-        config = TaskerConfigManager(dir.absolutePath, Task("* * * * *", "msg @a Hello from Tasker!"))
+        config = TaskerConfigManager(dir.absolutePath, Task("0 * * ? * *", "say Hello from Tasker!"))
         executor = TaskExecutor(config!!, exec, log)
     }
 

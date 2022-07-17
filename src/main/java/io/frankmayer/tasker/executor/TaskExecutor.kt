@@ -1,7 +1,7 @@
-package executor
+package io.frankmayer.tasker.executor
 
-import config.Task
-import config.TaskerConfigManager
+import io.frankmayer.tasker.config.Task
+import io.frankmayer.tasker.config.TaskerConfigManager
 import org.quartz.CronScheduleBuilder.cronSchedule
 import org.quartz.CronTrigger
 import org.quartz.JobBuilder

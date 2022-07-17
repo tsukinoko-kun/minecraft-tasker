@@ -1,5 +1,5 @@
-package executor
+package io.frankmayer.tasker.executor
 
-import config.Task
+import io.frankmayer.tasker.config.Task
 
 data class TaskExeData(val index: Int, var nextExecutionTime: Long, val task: Task)

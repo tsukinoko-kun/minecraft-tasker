@@ -1,4 +1,4 @@
-package config
+package io.frankmayer.tasker.config
 
 import com.google.gson.GsonBuilder
 import java.io.File
