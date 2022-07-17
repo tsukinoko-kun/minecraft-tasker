@@ -36,7 +36,7 @@ class Tasker : JavaPlugin() {
             }
         }
 
-        config = TaskerConfigManager(dir.absolutePath, Task("* * * * *", "msg @a Hello from Tasker!"))
+        config = TaskerConfigManager(dir.absolutePath, Task("0 * * ? * *", "say Hello from Tasker!"))
         executor = TaskExecutor(config!!, exec, log)
     }
 
